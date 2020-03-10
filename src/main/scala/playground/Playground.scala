@@ -1,6 +1,6 @@
 package playground
 
-import akka.actor.{ActorLogging, ActorSystem, Props}
+import akka.actor.{ ActorLogging, ActorSystem, Props }
 import akka.persistence.PersistentActor
 
 object Playground extends App {
@@ -20,7 +20,7 @@ object Playground extends App {
     }
   }
 
-  val system = ActorSystem("Playground")
+  val system      = ActorSystem("Playground")
   val simpleActor = system.actorOf(Props[SimplePersistentActor], "simplePersistentActor")
   simpleActor ! "I love Akka!"
 
@@ -29,5 +29,5 @@ object Playground extends App {
     Only run it after you've made the necessary configurations in application.conf.
 
     If the code compiles, you're good to go. Feel free to delete this code and go wild with your experiments with Akka Persistence!
-  */
+ */
 }

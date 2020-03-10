@@ -14,6 +14,7 @@ lazy val protobufVersion = "3.6.1"
 // some libs are available in Bintray's JCenter
 resolvers += Resolver.jcenterRepo
 
+
 libraryDependencies ++= Seq(
   "com.typesafe.akka"          %% "akka-persistence" % akkaVersion,
 
